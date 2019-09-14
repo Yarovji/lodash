@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash';
 
-
 @Component({
   selector: 'app-lodash',
   templateUrl: './lodash.component.html',
@@ -10,6 +9,8 @@ import * as _ from 'lodash';
 export class LodashComponent implements OnInit {
   arr = [9, 20, 41, 6, 45, 76, 243, 999, 3, 199, 3];
   arr2 = [1, 2, 3, false, 'shota', '', true, 55, undefined, 'shota2', null, {end: 'the end'}];
+  arr = [{name: 'Ivan', id: 1}, {name: 'Petro', id: 0}, {name: 'Vasul', id: 3}, {name: 'Taras', id: 4}];
+
 
   constructor() { }
 
@@ -42,9 +43,9 @@ export class LodashComponent implements OnInit {
     // console.log(this.arr2);
     // console.log(_.without(this.arr, 3, 999));
     // console.log(this.arr);
-    console.log(_.zip(this.arr, this.arr2));
-    console.log(this.arr);
-    console.log(this.arr2);
+//     console.log(_.zip(this.arr, this.arr2));
+//     console.log(this.arr);
+//     console.log(this.arr2);
   }
 
 }
