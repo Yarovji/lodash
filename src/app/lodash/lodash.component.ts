@@ -7,14 +7,36 @@ import * as _ from 'lodash';
   styleUrls: ['./lodash.component.css']
 })
 export class LodashComponent implements OnInit {
+  arrC = [{name: 'Ivan', id: 1}, {name: 'Petro', id: 0}, {name: 'Vasul', id: 3}, {name: 'Taras', id: 4}];
   arr = [9, 20, 41, 6, 45, 76, 243, 999, 3, 199, 3];
   arr2 = [1, 2, 3, false, 'shota', '', true, 55, undefined, 'shota2', null, {end: 'the end'}];
-  arr = [{name: 'Ivan', id: 1}, {name: 'Petro', id: 0}, {name: 'Vasul', id: 3}, {name: 'Taras', id: 4}];
-
+  arrO = [{name: 'Ivan', id: 1}, {name: 'Petro', id: 0}, {name: 'Vasul', id: 3}, {name: 'Taras', id: 4}];
 
   constructor() { }
 
   ngOnInit() {
+    // console.log(_.each(this.arrC, item => console.log(item.id + 5)));
+    // console.log(this.arrC);
+    // console.log(_.map(this.arrC, item => {
+    //   return (item.id + 5);
+    // }));
+    // console.log(this.arrC);
+    // console.log(_.map(this.arrC, 'name'));
+    // console.log(this.arrC);
+    // console.log(_.filter(this.arrC, 'id'));
+    // console.log(this.arrC);
+    // console.log(_.find(this.arrC, (item) => item.id === 0));
+    // console.log(this.arrC);
+    // console.log(_.findLast(this.arrC, 'name'));
+    // console.log(this.arrC);
+    // console.log(_.reject(this.arrC, 'id'));
+    // console.log(this.arrC);
+    // console.log(_.shuffle(this.arrC));
+    // console.log(this.arrC);
+    // console.log(_.size(this.arrC));
+    // console.log(this.arrC);
+//     console.log(_.sortBy(this.arrC, [o => o.id]));
+//     console.log(this.arrC);
     // console.log(_.first(this.arr));
     // console.log(_.chunk(this.arr));
     // console.log(_.chunk(this.arr, 4));
